@@ -18,7 +18,13 @@ const Card = props => {
     setCredibility(props.credibility);
     setTitle(props.title);
     setDescription(props.description);
-  });
+  }, [
+    props.genre,
+    props.author,
+    props.credibility,
+    props.title,
+    props.description
+  ]);
 
   return (
     <article style={ article } >

@@ -2,10 +2,32 @@ import React from 'react';
 
 const Nav = () => {
   return (
-    <nav>
-      <h1>Fuck you</h1>
+    <nav style={ navBar }>
+      <div className="fire">
+        <div className="fire-left">
+          <div className="main-fire"></div>
+          <div className="particle-fire"></div>
+        </div>
+        <div className="fire-main">
+          <div className="main-fire"></div>
+          <div className="particle-fire"></div>
+        </div>
+        <div className="fire-right">
+          <div className="main-fire"></div>
+          <div className="particle-fire"></div>
+        </div>
+        <div className="fire-bottom">
+          <div className="main-fire"></div>
+        </div>
+      </div>
     </nav>
   )
+}
+
+const navBar = {
+  position: 'absolute',
+  bottom: '20px',
+  right: '20px',
 }
 
 export default Nav;
