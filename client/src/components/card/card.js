@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Title from './title';
 import Genre from './genre';
 import Credibility from './credibility';
-import description from './description';
+import Description from './description';
 
 class Card extends Component {
   render() {
