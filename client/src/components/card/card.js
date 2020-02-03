@@ -5,7 +5,7 @@ import Genre from './genre';
 import Credibility from './credibility';
 import Description from './description';
 
-const Card = (props) => {
+const Card = props => {
   const [genre, setGenre] = useState('');
   const [author, setAuthor] = useState('');
   const [credibility, setCredibility] = useState(0);
