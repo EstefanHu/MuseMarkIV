@@ -13,11 +13,13 @@ function App() {
   return (
     <Router>
       <Nav />
-      <Switch>
-        <Route path='/dashboard' exact>
-          <Dashboard />
-        </Route>
-      </Switch>
+      <main>
+        <Switch>
+          <Route path='/dashboard' exact>
+            <Dashboard />
+          </Route>
+        </Switch>
+      </main>
     </Router>
   );
 }

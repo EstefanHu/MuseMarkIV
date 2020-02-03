@@ -1,13 +1,29 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Card from '../card/card';
 
-const Dashboard = (props) => {
-  return (
+const Dashboard = () => {
+  const [content, setContent] = useState();
+
+  useEffect(() => {
+    fetch('http://localhost:4000/dashboard/')
+      .then(res => res.json())
+      .then(res => {
+        console.log(res.content)
+        setContent(res.content)
+      });
+  }, []);
+
+  return content ? (
     <section>
-      {props.content.map(item => (
-        <Card key={ item.id } props={ item } />
-      ))}
+      {/* {content.map(item => (
+        <Card key={ item.id } />
+      ))} */}
+      <p>{content.id}</p>
+    </section>
+  ) : (
+    <section>
+      <p>Loading...</p>
     </section>
   )
 }
