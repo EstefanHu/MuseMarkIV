@@ -6,13 +6,15 @@ import {
 } from 'react-router-dom';
 import './App.css';
 
+import Nav from './components/layout/nav';
 import Dashboard from './components/wrappers/dashboard';
 
 function App() {
   return (
-    <div className="App">
-      <Dashboard />
-    </div>
+    <Router>
+      <Nav />
+
+    </Router>
   );
 }
 
