@@ -9,7 +9,6 @@ const Dashboard = () => {
     fetch('http://localhost:4000/dashboard/')
       .then(res => res.json())
       .then(res => {
-        console.log(res.content)
         setContent(res.content)
       });
   }, []);
