@@ -19,6 +19,10 @@ mongoose.connection.once('open', () => {
     console.log('Connection Error: ' + err);
 });
 
+const dashboard = require('./routes/dashboard');
+
+app.use('/dashboard', dashboard);
+
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
