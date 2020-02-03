@@ -6,6 +6,14 @@ import Credibility from './credibility';
 import Description from './description';
 
 class Card extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      error: '',
+    }
+  }
+
   render() {
     return (
       <article style={ article } >
@@ -13,6 +21,7 @@ class Card extends Component {
           <p>
             <Genre genre={ this.props.genre } /> by { this.props.author }
           </p>
+          <Credibility credibility={ this.props.credibility } />
         </span>
         <Title title={ this.props.title } />
         <Description description={ this.props.description } />
