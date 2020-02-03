@@ -16,10 +16,9 @@ const Dashboard = () => {
 
   return content ? (
     <section>
-      {/* {content.map(item => (
+      {content.map(item => (
         <Card key={ item.id } />
-      ))} */}
-      <p>{content.id}</p>
+      ))}
     </section>
   ) : (
     <section>
