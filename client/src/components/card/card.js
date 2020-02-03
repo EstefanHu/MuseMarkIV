@@ -1,33 +1,37 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Title from './title';
 import Genre from './genre';
 import Credibility from './credibility';
 import Description from './description';
 
-class Card extends Component {
-  constructor(props) {
-    super(props);
+const Card = (props) => {
+  const [genre, setGenre] = useState('');
+  const [author, setAuthor] = useState('');
+  const [credibility, setCredibility] = useState(0);
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
 
-    this.state = {
-      error: '',
-    }
-  }
+  useEffect(() => {
+    setGenre(props.genre);
+    setAuthor(props.author);
+    setCredibility(props.credibility);
+    setTitle(props.title);
+    setDescription(props.description);
+  });
 
-  render() {
-    return (
-      <article style={ article } >
-        <span style={ header } >
-          <p>
-            <Genre genre={ this.props.genre } /> by { this.props.author }
-          </p>
-          <Credibility credibility={ this.props.credibility } />
-        </span>
-        <Title title={ this.props.title } />
-        <Description description={ this.props.description } />
-      </article>
-    )
-  }
+  return (
+    <article style={ article } >
+      <span style={ header } >
+        <p>
+          <Genre genre={ genre } /> by { author }
+        </p>
+        <Credibility credibility={ credibility } />
+      </span>
+      <Title title={ title } />
+      <Description description={ description } />
+    </article>
+  )
 }
 
 const article = {

@@ -16,7 +16,14 @@ const Dashboard = () => {
   return content ? (
     <section>
       {content.map(item => (
-        <Card key={ item.id } />
+        <Card 
+          key={ item.id }
+          genre={ item.genre }
+          author={ item.author }
+          credibility={ item.credibility }
+          title={ item.title }
+          description={ item.description }
+          />
       ))}
     </section>
   ) : (
