@@ -26,8 +26,8 @@ const Nav = () => {
 
 const navBar = {
   position: 'absolute',
-  bottom: '20px',
-  right: '20px',
+  bottom: '70px',
+  right: '100px',
 }
 
 export default Nav;
