@@ -3,3 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: rgb(241, 241, 241);
+}
+
+main {
+  min-width: 320px;
+  width: 80vw;
+  max-width: 800px;
+  margin: 80px auto;
+}

@@ -8,7 +8,7 @@ router.route('/').get((req, res) => {
     },
     {
       "id": 2,
-      "title": "Alternate Universe"
+      "title": "AU"
     },
     {
       "id": 3,
