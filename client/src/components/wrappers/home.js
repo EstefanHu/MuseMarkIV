@@ -19,6 +19,7 @@ const Home = () => {
         <Hub
           key={ item.id }
           title={ item.title }
+          img={ item.img }
         />
       ))}
     </section>
