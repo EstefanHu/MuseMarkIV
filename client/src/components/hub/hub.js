@@ -1,11 +1,11 @@
-import React, { useState, useEfffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Title from './title';
 
 const Hub = props => {
   const [title, setTitle] = useState('');
 
-  useEfffect(() => {
+  useEffect(() => {
     setTitle(props.title);
   }, [
     props.title,
@@ -19,8 +19,8 @@ const Hub = props => {
 }
 
 const article = {
-  height: '300px',
-  width: '150px',
+  height: '500px',
+  width: '800px',
   boxShadow: '12px 12px 12px 0 rgba(0, 0, 0, 0.05)',
   padding: '20px 30px'
 }
