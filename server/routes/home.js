@@ -12,7 +12,11 @@ router.route('/').get((req, res) => {
     },
     {
       "id": 3,
-      "title": "University of Washington Poetry Society"
+      "title": "UW Poetry Club"
+    },
+    {
+      "id": 4,
+      "title": "ASUWQSC"
     }
   ]});
 });
