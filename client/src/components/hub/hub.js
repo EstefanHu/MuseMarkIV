@@ -3,11 +3,13 @@ import React, { useState, useEfffect } from 'react';
 import Title from './title';
 
 const Hub = props => {
-  const [instance, setInstance] = setState();
+  const [title, setTitle] = useState('');
 
   useEfffect(() => {
-    console.log(props);
-  }, []);
+    setTitle(props.title);
+  }, [
+    props.title,
+  ]);
 
   return(
     <article style={ article}>

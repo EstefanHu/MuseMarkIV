@@ -7,6 +7,7 @@ import {
 import './App.css';
 
 import Nav from './components/layout/nav';
+import Home from './components/wrappers/home';
 import Dashboard from './components/wrappers/dashboard';
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
       <Nav />
       <main>
         <Switch>
+          <Route path='/' exact>
+            <Home />
+          </Route>
           <Route path='/dashboard' exact>
             <Dashboard />
           </Route>
