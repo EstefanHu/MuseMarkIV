@@ -13,9 +13,19 @@ const Posts = () => {
       });
   }, []);
 
-  return (
+  return stories ? (
     <section style={ posts }>
-      {console.log(stories)}
+      {stories.map(item => (
+        <Hub
+          key={ item.id }
+          title={ item.title }
+          pitch={ item.pitch }
+        />
+      ))}
+    </section>
+  ) : (
+    <section>
+      Loading...
     </section>
   )
 }
