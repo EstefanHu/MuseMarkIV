@@ -11,8 +11,7 @@ const Img = props => {
 }
 
 const backgroundImg = {
-  minHeight: '100%',
-  maxHeight: '100%',
+  height: '100%',
   minWidth: '100%',
   position: 'absolute',
   zIndex: '-1',
