@@ -11,6 +11,8 @@ const Actions = props => {
 
 const actions = {
   display: 'flex',
+  justifyContent: 'space-around',
+  width: '300px'
 }
 
 export default Actions;
