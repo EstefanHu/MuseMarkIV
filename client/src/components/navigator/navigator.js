@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Item from './item';
 
 const Navigator = () => {
-  const clubs = ['Write Away', 'AU', 'UW Poetry Club', 'The Daily', 'ASUWQSC'];
+  const clubs = ['Write Away', 'AU', 'UW Poetry Club', 'Bricolage','The Daily', 'ASUWQSC'];
 
   return (
     <nav style={ nav }>

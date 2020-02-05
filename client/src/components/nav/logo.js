@@ -1,13 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Logo = () => {
   return (
-    <h1 style={ logo }>Project Muse</h1>
+    <Link to="/" style={ logo }>Project Muse</Link>
   )
 }
 
 const logo = {
-  width: '300px'
+  width: '300px',
+  color: 'black',
+  textDecoration: 'none',
+  fontSize: '2rem',
+  fontWeight: 'bold',
 }
 
 export default Logo;
