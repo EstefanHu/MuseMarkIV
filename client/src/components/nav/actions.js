@@ -9,14 +9,14 @@ const Actions = props => {
 }
 
 const join = {
-  border: 'none',
-  borderRadius: '10px',
-  height: '30px',
-  width: '80px',
+  border: '1px solid grey',
+  borderRadius: '5px',
+  height: '34px',
+  width: '84px',
   fontWeight: 'bold',
   fontSize: '.8rem',
-  color: 'white',
-  backgroundColor: 'black'
+  color: 'grey',
+  backgroundColor: 'white'
 }
 
 export default Actions;
