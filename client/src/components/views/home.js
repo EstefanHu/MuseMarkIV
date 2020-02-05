@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+import Hero from '../hero/hero';
 import Hosts from '../wrappers/hosts';
 import Content from '../wrappers/content';
 
@@ -16,6 +17,7 @@ const Home = () => {
 
   return hubs ? (
     <main>
+      <Hero />
       <Hosts hubs={ hubs } />
       <Content />
     </main>

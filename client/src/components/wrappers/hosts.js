@@ -18,7 +18,8 @@ const Hosts = props => {
 const hosts = {
   borderRight: '1px solid black',
   width: '300px',
-  height: 'auto'
+  height: 'fit-content',
+  gridArea: 'hosts'
 }
 
 export default Hosts

@@ -5,6 +5,12 @@
 }
 
 main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 500px auto;
+  grid-template-areas: "hero hero hero"
+                       "hosts content content";
+  grid-gap: 15px;
   width: 1200px;
   margin: 80px auto;
 }
