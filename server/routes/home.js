@@ -5,7 +5,7 @@ router.route('/').get((req, res) => {
       {
         "id": 1,
         "title": "Write Away!",
-        "pitch": "People think dreams aren't real just because they aren't made of matter, of particles. Dreams are real. But they are made of viewpoints, of images, of memories and puns and lost hopes."
+        "pitch": "People think dreams aren't real just because they aren't made of matter, of particles."
       },
       {
         "id": 2,
@@ -20,7 +20,7 @@ router.route('/').get((req, res) => {
       {
         "id": 4,
         "title": "ASUWQSC",
-        "pitch": "The Queer Student Commission aims to bring equity and justice for queer and trans students on campus. As part of the Associated Students of the University of Washington, we bring queer-focused programs, events, and services throughout the school year."
+        "pitch": "The Queer Student Commission aims to bring equity and justice for queer and trans students on campus."
       }
     ]
   });
