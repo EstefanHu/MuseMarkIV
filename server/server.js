@@ -20,10 +20,8 @@ mongoose.connection.once('open', () => {
 });
 
 const home = require('./routes/home');
-const dashboard = require('./routes/dashboard');
 
 app.use('/home', home);
-app.use('/dashboard', dashboard);
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
