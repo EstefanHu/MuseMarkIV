@@ -16,6 +16,7 @@ const Nav = props => {
 
 const navBar = {
   display: 'flex',
+  justifyContent: 'space-between',
   position: 'fixed',
   left: '0',
   top: '0',
