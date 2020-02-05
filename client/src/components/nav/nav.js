@@ -15,14 +15,10 @@ const Nav = props => {
 const navBar = {
   display: 'flex',
   justifyContent: 'space-between',
-  position: 'relative',
-  left: '0',
-  top: '0',
-  right: '0',
-  height: '100px',
-  backgroundColor: 'white',
-  zIndex: '10',
-  padding: '10px 50px',
+  height: '60px',
+  padding: '20px 10px',
+  width: '70vw',
+  margin: '0 auto',
 }
 
 export default Nav;

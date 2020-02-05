@@ -18,7 +18,7 @@ const navigator = {
   display: 'flex',
   justifyContent: 'space-around',
   margin: '20px auto',
-  width: '1000px',
+  width: '70vw',
   position: '-webkit-sticky',
   position: 'sticky',
   top: '0',

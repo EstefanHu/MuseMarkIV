@@ -11,6 +11,6 @@ main {
   grid-template-areas: "hero hero"
                        "hosts content";
   grid-gap: 10px;
-  width: 1200px;
-  margin: 100px auto;
+  width: 70vw;
+  margin: 50px auto;
 }

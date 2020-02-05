@@ -12,7 +12,7 @@ const Hero = () => {
 }
 
 const hero = {
-  width: '100%',
+  width: '70vw',
   height: '100%',
   position: 'relative',
   gridArea: 'hero',
