@@ -7,7 +7,7 @@ const Title = props => {
 }
 
 const title = {
-  color: 'rgb(61, 61, 61)',
+  color: 'black',
   textDecoration: 'none',
   fontSize: '2em'
 }
