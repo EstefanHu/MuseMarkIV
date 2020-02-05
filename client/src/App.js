@@ -7,6 +7,7 @@ import {
 import './App.css';
 
 import Nav from './components/nav/nav';
+import Navigator from './components/navigator/navigator';
 import Home from './components/views/home';
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
   return (
     <Router>
       <Nav user={ user }/>
+      <Navigator />
       <Switch>
         <Route path='/' exact>
           <Home />

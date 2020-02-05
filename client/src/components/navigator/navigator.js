@@ -6,11 +6,11 @@ const Navigator = () => {
   const clubs = ['Write Away', 'AU', 'UW Poetry Club', 'The Daily', 'ASUWQSC'];
 
   return (
-    <span style={ navigator }>
+    <nav style={ navigator }>
       {clubs.map(item => (
         <Item name={item} />
       ))}
-    </span>
+    </nav>
   )
 }
 
@@ -22,6 +22,7 @@ const navigator = {
   position: '-webkit-sticky',
   position: 'sticky',
   top: '0',
+  backgroundColor: 'white'
 }
 
 export default Navigator;
