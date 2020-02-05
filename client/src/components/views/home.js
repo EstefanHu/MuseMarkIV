@@ -19,7 +19,7 @@ const Home = () => {
     <main>
       <Hero />
       <Hosts hubs={ hubs } />
-      <Content />
+      <Content isBase={ true } />
     </main>
   ) : (
     <main>
