@@ -6,6 +6,7 @@ const Hero = () => {
       <img
         src='./hero.jpg'
         style={ img }
+        alt='whoops'
       />
     </section>
   )

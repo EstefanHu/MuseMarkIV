@@ -1,16 +1,39 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import Item from './item';
 
 const Navigator = () => {
-  const clubs = ['Write Away', 'AU', 'UW Poetry Club', 'Bricolage','The Daily', 'ASUWQSC'];
+  const clubs = [
+    {
+      "id": 1,
+      "name": "Write Away!"
+    },
+    {
+      "id": 2,
+      "name": "AU"
+    },
+    {
+      "id": 3,
+      "name": "UW Poetry Club"
+    },
+    {
+      "id": 4,
+      "name": "Bricolage"
+    },
+    {
+      "id": 5,
+      "name": "The Daily"
+    },
+    {
+      "id": 6,
+      "name": "ASUWQSC"
+    }];
 
   return (
     <nav style={ nav }>
       <span style={ navigator}>
         {clubs.map(item => (
-          <Item name={ item }/>
+          <Item name={ item.name } key={ item.id }/>
         ))}
       </span>
     </nav>
