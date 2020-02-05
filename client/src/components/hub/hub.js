@@ -5,14 +5,14 @@ import Pitch from './pitch';
 
 const Hub = props => {
   return(
-    <article style={ article }>
+    <div style={ club }>
       <Title title={ props.title } />
       <Pitch pitch={ props.pitch } />
-    </article>
+    </div>
   )
 }
 
-const article = {
+const club = {
   marginBottom: '20px',
 }
 

@@ -2,8 +2,12 @@ import React from 'react';
 
 const Pitch = props => {
   return (
-    <p>{ props.pitch }</p>
+    <p stlye={ pitch }>{ props.pitch }</p>
   )
+}
+
+const pitch = {
+  paddingLeft: '10px'
 }
 
 export default Pitch;

@@ -1,17 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
-const Content = () => {
-  const isHome = useState(false);
+import Base from './base';
+import Feed from './feed';
 
-  useEffect(() => {
-
-  }, []);
-
-  return (
-    <section style={ content }>
-      <h1>Hello World</h1>
-    </section>
-  )
+const Content = props => {
+  return props.isBase ?
+    <Base /> : <Feed />
 }
 
 const content = {
