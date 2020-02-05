@@ -14,16 +14,14 @@ function App() {
   return (
     <Router>
       <Nav />
-      <main>
-        <Switch>
-          <Route path='/' exact>
-            <Home />
-          </Route>
-          <Route path='/dashboard' exact>
-            <Dashboard />
-          </Route>
-        </Switch>
-      </main>
+      <Switch>
+        <Route path='/' exact>
+          <Home />
+        </Route>
+        <Route path='/dashboard' exact>
+          <Dashboard />
+        </Route>
+      </Switch>
     </Router>
   );
 }

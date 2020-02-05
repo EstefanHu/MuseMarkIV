@@ -14,15 +14,20 @@ const Home = () => {
   }, []);
 
   return hubs ? (
-    <section>
-      {hubs.map(item => (
-        <Hub
-          key={ item.id }
-          title={ item.title }
-          img={ item.img }
-        />
-      ))}
-    </section>
+    <main>
+      <section>
+        {hubs.map(item => (
+          <Hub
+            key={ item.id }
+            title={ item.title }
+            img={ item.img }
+          />
+        ))}
+      </section>
+      <section>
+        
+      </section>
+    </main>
   ) : (
     <section>
       <p>Loading...</p>
