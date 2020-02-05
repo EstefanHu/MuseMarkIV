@@ -8,7 +8,6 @@ import './App.css';
 
 import Nav from './components/nav/nav';
 import Home from './components/views/home';
-import Dashboard from './components/views/dashboard';
 
 const App = () => {
   const user = 'Estefan Hu';
