@@ -17,7 +17,6 @@ const hero = {
   position: 'relative',
   gridArea: 'hero',
   overflow: 'hidden',
-  // marginBottom: '20px'
 }
 
 const img = {
