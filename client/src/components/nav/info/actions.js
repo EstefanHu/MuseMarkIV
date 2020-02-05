@@ -2,17 +2,21 @@ import React from 'react';
 
 const Actions = props => {
   return (
-    <span style={ actions }>
-      <p>{ props.user }</p>
-      <p>settings</p>
-    </span>
+    <button style={ join }>
+      Join Beta
+    </button>
   )
 }
 
-const actions = {
-  display: 'flex',
-  justifyContent: 'space-around',
-  width: '300px'
+const join = {
+  border: 'none',
+  borderRadius: '10px',
+  height: '30px',
+  width: '80px',
+  fontWeight: 'bold',
+  fontSize: '.8rem',
+  color: 'white',
+  backgroundColor: 'black'
 }
 
 export default Actions;

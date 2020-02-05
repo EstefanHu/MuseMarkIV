@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Item from './navigator/item';
+import Item from './item';
 
 const Navigator = () => {
   const clubs = ['Write Away', 'AU', 'UW Poetry Club', 'The Daily', 'ASUWQSC'];
@@ -19,6 +19,9 @@ const navigator = {
   justifyContent: 'space-around',
   margin: '20px auto',
   width: '1000px',
+  position: '-webkit-sticky',
+  position: 'sticky',
+  top: '0',
 }
 
 export default Navigator;

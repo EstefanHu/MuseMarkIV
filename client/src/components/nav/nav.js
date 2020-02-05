@@ -1,22 +1,21 @@
 import React from 'react';
 
-import Info from './info';
-import Navigator from './navigator';
+import Logo from './info/logo';
+import Actions from './info/actions';
 
 const Nav = props => {
   return (
     <nav style={ navBar }>
-      <Info user={ props.user } />
-      <Navigator />
+      <Logo />
+      <Actions user={ props.user } />
     </nav>
   )
 }
 
 const navBar = {
   display: 'flex',
-  flexDirection: 'column',
   justifyContent: 'space-between',
-  position: 'fixed',
+  position: 'relative',
   left: '0',
   top: '0',
   right: '0',
