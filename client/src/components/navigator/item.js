@@ -9,7 +9,7 @@ const Item = props => {
 const item = {
   color: 'grey',
   textTransform: 'uppercase',
-  fontSize: '.8rem',
+  fontSize: '.85rem',
   fontWeight: '500'
 }
 
