@@ -9,7 +9,8 @@ const Hosts = () => {
     fetch('http://localhost:4000/home/')
       .then(res => res.json())
       .then(res => {
-        setStories(res.hubs)
+        // setStories(res.hubs)
+        console.log(res)
       });
   }, []);
 

@@ -5,15 +5,11 @@ import Hosts from '../wrappers/hosts';
 import Content from '../wrappers/content';
 
 const Home = () => {
-  return hubs ? (
+  return (
     <main>
       <Hero />
       <Content isBase={ true } />
-      <Hosts } />
-    </main>
-  ) : (
-    <main>
-      <p>Loading...</p>
+      {/* <Hosts /> */}
     </main>
   )
 }
