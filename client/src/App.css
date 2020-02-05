@@ -6,11 +6,11 @@
 
 main {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 30% 70%;
   grid-template-rows: 500px auto;
-  grid-template-areas: "hero hero hero"
-                       "hosts content content";
-  grid-gap: 15px;
+  grid-template-areas: "hero hero"
+                       "hosts content";
+  grid-gap: 10px;
   width: 1200px;
   margin: 60px auto;
 }
