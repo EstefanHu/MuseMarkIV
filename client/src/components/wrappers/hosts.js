@@ -9,6 +9,7 @@ const Hosts = props => {
         <Hub
           key={ item.id }
           title={ item.title }
+          pitch={ item.pitch }
         />
       ))}
     </section>
