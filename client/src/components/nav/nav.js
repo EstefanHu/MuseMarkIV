@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Logo from './info/logo';
-import Actions from './info/actions';
+import Logo from './logo';
+import Actions from './actions';
 
 const Nav = props => {
   return (
