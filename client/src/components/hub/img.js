@@ -11,10 +11,14 @@ const Img = props => {
 }
 
 const backgroundImg = {
-  height: '100%',
-  width: '100%',
+  minHeight: '100%',
+  maxHeight: '100%',
+  minWidth: '100%',
   position: 'absolute',
-  zIndex: '-1'
+  zIndex: '-1',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)'
 }
 
 export default Img;
