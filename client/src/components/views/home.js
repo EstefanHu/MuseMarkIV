@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import Hero from '../hero/hero';
-import Hosts from '../wrappers/hosts';
+import Hosts from '../wrappers/posts';
 import Content from '../wrappers/content';
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
     <main>
       <Hero />
       <Content isBase={ true } />
-      {/* <Hosts /> */}
+      <Hosts />
     </main>
   )
 }

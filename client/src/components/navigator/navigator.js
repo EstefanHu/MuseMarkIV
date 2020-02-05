@@ -10,7 +10,7 @@ const Navigator = () => {
     <nav style={ nav }>
       <span style={ navigator}>
         {clubs.map(item => (
-          <Item name={item} />
+          <Item name={ item }/>
         ))}
       </span>
     </nav>
