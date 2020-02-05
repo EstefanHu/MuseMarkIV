@@ -7,8 +7,8 @@ import {
 import './App.css';
 
 import Nav from './components/layout/nav';
-import Home from './components/wrappers/home';
-import Dashboard from './components/wrappers/dashboard';
+import Home from './components/views/home';
+import Dashboard from './components/views/dashboard';
 
 function App() {
   return (

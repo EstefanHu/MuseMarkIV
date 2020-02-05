@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import Hub from '../hub/hub';
+import Hosts from '../wrappers/hosts';
 
 const Home = () => {
   const [hubs, setHubs] = useState();
@@ -15,15 +15,7 @@ const Home = () => {
 
   return hubs ? (
     <main>
-      <section>
-        {hubs.map(item => (
-          <Hub
-            key={ item.id }
-            title={ item.title }
-            img={ item.img }
-          />
-        ))}
-      </section>
+      <Hosts hubs={ hubs } />
       <section>
         
       </section>
