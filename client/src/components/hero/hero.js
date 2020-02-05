@@ -13,9 +13,8 @@ const Hero = () => {
 
 const hero = {
   width: '70vw',
-  height: '100%',
+  height: '500px',
   position: 'relative',
-  gridArea: 'hero',
   overflow: 'hidden',
 }
 

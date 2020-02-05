@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Hub from '../hub/hub';
 
-const Hosts = props => {
+const Hosts = () => {
+  const [stories, setStories] = useState();
+
+  useEffect(() => {
+    fetch('http://localhost:4000/home/')
+      .then(res => res.json())
+      .then(res => {
+        setStories(res.hubs)
+      });
+  }, []);
+
   return (
     <section style={ hosts }>
-      {props.hubs.map(item => (
+      {stories.map(item => (
         <Hub
           key={ item.id }
           title={ item.title }
@@ -17,10 +27,8 @@ const Hosts = props => {
 }
 
 const hosts = {
-  borderRight: '1px solid black',
-  width: '100%',
+  width: '400px',
   height: 'fit-content',
-  gridArea: 'hosts',
   padding: '10px 20px'
 }
 
