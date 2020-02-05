@@ -6,20 +6,18 @@ import {
 } from 'react-router-dom';
 import './App.css';
 
-import Nav from './components/layout/nav';
+import Nav from './components/nav/nav';
 import Home from './components/views/home';
 import Dashboard from './components/views/dashboard';
 
-function App() {
+const App = () => {
+  const user = 'Estefan Hu';
   return (
     <Router>
-      <Nav />
+      <Nav user={ user }/>
       <Switch>
         <Route path='/' exact>
           <Home />
-        </Route>
-        <Route path='/dashboard' exact>
-          <Dashboard />
         </Route>
       </Switch>
     </Router>

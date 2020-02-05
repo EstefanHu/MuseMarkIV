@@ -9,7 +9,7 @@ const Title = props => {
 const title = {
   color: 'black',
   textDecoration: 'none',
-  fontSize: '2em'
+  fontSize: '1.5rem'
 }
 
 export default Title;

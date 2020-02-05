@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import Hosts from '../wrappers/hosts';
+import Content from '../wrappers/content';
 
 const Home = () => {
   const [hubs, setHubs] = useState();
@@ -16,14 +17,12 @@ const Home = () => {
   return hubs ? (
     <main>
       <Hosts hubs={ hubs } />
-      <section>
-        
-      </section>
+      <Content />
     </main>
   ) : (
-    <section>
+    <main>
       <p>Loading...</p>
-    </section>
+    </main>
   )
 }
 

@@ -11,7 +11,7 @@ const Hub = props => {
 }
 
 const article = {
-  height: '200px',
+  height: '100px',
   width: '300px',
   marginBottom: '20px',
 }

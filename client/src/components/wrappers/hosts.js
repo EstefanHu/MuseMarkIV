@@ -4,7 +4,7 @@ import Hub from '../hub/hub';
 
 const Hosts = props => {
   return (
-    <section>
+    <section style={ hosts }>
       {props.hubs.map(item => (
         <Hub
           key={ item.id }
@@ -13,6 +13,12 @@ const Hosts = props => {
       ))}
     </section>
   )
+}
+
+const hosts = {
+  borderRight: '1px solid black',
+  width: '300px',
+  height: 'auto'
 }
 
 export default Hosts
