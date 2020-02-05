@@ -21,6 +21,11 @@ router.route('/').get((req, res) => {
         "id": 4,
         "title": "ASUWQSC",
         "pitch": "The Queer Student Commission aims to bring equity and justice for queer and trans students on campus."
+      },
+      {
+        "id": 5,
+        "title": "The Daily",
+        "pitch": "Daily news for the University of Washington"
       }
     ]
   });
