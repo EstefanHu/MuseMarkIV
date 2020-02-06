@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 app.use(bodyParser.json());
+app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
@@ -17,6 +18,10 @@ mongoose.connection.once('open', () => {
     console.log(`connection has been established to ${DB_CONNECTION}`);
 }).on('err', err => {
     console.log('Connection Error: ' + err);
+});
+
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/public/views/index.html');
 });
 
 const home = require('./routes/home');
