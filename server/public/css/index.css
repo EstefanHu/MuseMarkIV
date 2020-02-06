@@ -1,0 +1,10 @@
+#hero {
+  width: 70vw;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero img {
+  width: 100%;
+}
