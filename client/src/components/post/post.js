@@ -3,7 +3,7 @@ import React from 'react';
 import Title from './title';
 import Pitch from './pitch';
 
-const Hub = props => {
+const Post = props => {
   return(
     <div style={ club }>
       <Title title={ props.title } />
@@ -16,4 +16,4 @@ const club = {
   marginBottom: '20px',
 }
 
-export default Hub;
+export default Post;

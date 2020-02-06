@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import Hub from '../hub/hub';
+import Post from '../post/post';
 
 const Posts = () => {
   const [stories, setStories] = useState();
@@ -9,14 +9,14 @@ const Posts = () => {
     fetch('http://localhost:4000/home/')
       .then(res => res.json())
       .then(res => {
-        setStories(res.hubs)
+        setStories(res.posts)
       });
   }, []);
 
   return stories ? (
     <section style={ posts }>
       {stories.map(item => (
-        <Hub
+        <Post
           key={ item.id }
           title={ item.title }
           pitch={ item.pitch }

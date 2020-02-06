@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 router.route('/').get((req, res) => {
-  res.json({"hubs": [
+  res.json({"posts": [
       {
         "id": 1,
         "title": "Write Away!",
