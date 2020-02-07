@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-main {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 #primary_nav {
   display: flex;
   justify-content: space-between;
@@ -76,7 +71,19 @@ main {
   text-decoration: none;
 }
 
+main {
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#content {
+  width: 800px;
+}
+
 #trending {
+  padding-top: 60px;
   width: 250px;
 }
 
@@ -96,5 +103,19 @@ main {
 @media only screen and (max-width: 1200px) {
   main {
     width: 100%;
+  }
+
+  #content {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #content {
+    width: 100%;
+  }
+
+  #trending {
+    display: none;
   }
 }

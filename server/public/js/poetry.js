@@ -1,5 +1,5 @@
 'use strict';
-(funciton() {
+(function() {
   window.addEventListener('load', init);
 
   function init() {
