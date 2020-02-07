@@ -24,11 +24,19 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/views/index.html');
 });
 
-const home = require('./routes/home');
-const comment = require('./routes/comment');
+app.post('/createComment/:post', (req, res) => {
+    try {
+        res.json('gotit');
+    } catch(error) {
+        res.type('text').status(500).send('Error:' + error);
+    }
+});
 
-app.use('/home', home);
-app.use('/comment', comment);
+// const home = require('./routes/home');
+// const comment = require('./routes/comment');
+
+// app.use('/home', home);
+// app.use('/comment', comment);
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
