@@ -5,7 +5,11 @@
   function init() {
     fetch('http://localhost:4000/trending')
       .then(res => res.json())
-      .then(console.log)
+      .then(res => renderTrending(res))
       .catch(console.error);
+  }
+
+  function renderTrending(res) {
+    console.log(res);
   }
 })();

@@ -29,19 +29,23 @@ app.get('/trending', (req, res) => {
         const trending = [
             {
                 "title": "Gen X Will Not go Quitly",
-                "author": "Amber Fraley"
+                "author": "Amber Fraley",
+                "date": "Jan 23"
             },
             {
                 "title": "The Actual State of the Union",
-                "author": "Drew Magnorly"
+                "author": "Drew Magnorly",
+                "date": "Jan 28"
             },
             {
                 "title": "Teslas Cybertruck has a huge coboy probelm",
-                "author": "David H Freeman"
+                "author": "David H Freeman",
+                "date": "Feb 3"
             },
             {
                 "title": "Want to Feel loved? Get Cancer.",
-                "author": "Brandon Janouse"
+                "author": "Brandon Janouse",
+                "date": "Jan 12"
             }
         ]
         res.json(trending);

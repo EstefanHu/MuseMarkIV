@@ -73,19 +73,18 @@
 
 main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 1200px;
   margin: 0 auto;
 }
 
 #content {
-  width: 800px;
-  /* flex-grow: 100; */
+  width: 700px;
 }
 
 #trending {
   padding-top: 60px;
-  width: 250px;
+  width: 280px;
 }
 
 #trending h2 {
@@ -99,6 +98,31 @@ main {
   border: 0;
   border-top: 1px solid lightgrey;
   margin: 20px 0;
+}
+
+.trending_item {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+}
+
+.trending_item h3 {
+  color: lightgrey;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.trending_item span {
+  padding-left: 20px;
+}
+
+.trending_item p {
+  font-size: .9rem;
+  margin-top: 5px;
+}
+
+.trending_date {
+  color: grey;
 }
 
 @media only screen and (max-width: 1200px) {
