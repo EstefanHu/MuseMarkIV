@@ -80,6 +80,7 @@ main {
 
 #content {
   width: 800px;
+  /* flex-grow: 100; */
 }
 
 #trending {

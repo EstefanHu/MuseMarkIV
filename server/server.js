@@ -24,6 +24,32 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/views/index.html');
 });
 
+app.get('/trending', (req, res) => {
+    try {
+        const trending = [
+            {
+                "title": "Gen X Will Not go Quitly",
+                "author": "Amber Fraley"
+            },
+            {
+                "title": "The Actual State of the Union",
+                "author": "Drew Magnorly"
+            },
+            {
+                "title": "Teslas Cybertruck has a huge coboy probelm",
+                "author": "David H Freeman"
+            },
+            {
+                "title": "Want to Feel loved? Get Cancer.",
+                "author": "Brandon Janouse"
+            }
+        ]
+        res.json(trending);
+    } catch(error) {
+        res.type('text').status(500).send('Error:' + error);
+    }
+})
+
 app.post('/createComment/:post', (req, res) => {
     try {
         res.json('gotit');
