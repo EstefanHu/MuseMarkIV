@@ -89,8 +89,21 @@
 }
 
 #hero_1 {
+  position: relative;
+}
+
+#hero_1::after {
+  content: "";
   background: url('../img/hero1.jpg');
-  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.9;
 }
 
 @media only screen and (max-width: 900px) {
