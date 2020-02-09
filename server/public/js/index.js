@@ -34,11 +34,20 @@
     nextButton.addEventListener('click', e => {
       const currSlide = track.querySelector('.current_slide');
       const nextSlide = currSlide.nextElementSibling;
-      const amountToMove = nextSlide.style.left;
 
-      track.style.transform = 'translateX(-' + amountToMove + ')';
+      moveToSlide(track, currSlide, nextSlide);
     });
 
+    // prevButton.addEventListener('click' e => {
+
+    // })
+
+  }
+
+  const moveToSlide = (track, currSlide, targetSlide) => {
+    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+    currSlide.classList.remove('current_slide');
+    targetSlide.classList.add('current_slide');
   }
 
   
