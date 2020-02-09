@@ -12,4 +12,11 @@
   function renderTrending(res) {
     console.log(res);
   }
+
+  function submit(e) {
+    e.preventDefault();
+    console.log(e)
+  }
+
+  window.submit = submit;
 })();
