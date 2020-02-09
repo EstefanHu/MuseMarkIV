@@ -38,11 +38,11 @@
   cursor: pointer;
 }
 
-.carousel_button--left {
+#carousel_button--left {
   left: -40px;
 }
 
-.carousel_button--right {
+#carousel_button--right {
   right: -40px;
 }
 
