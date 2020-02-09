@@ -1,0 +1,128 @@
+#hero {
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#carousel_track-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel_item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel_item h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.carousel_item p {
+  font-size: 1.5rem;
+}
+
+#carousel_track {
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.carousel_slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel_button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+#carousel_button--left {
+  left: -40px;
+}
+
+#carousel_button--right {
+  right: -40px;
+}
+
+.carousel_button img {
+  width: 20px;
+}
+
+#carousel_nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel_indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background: rgba(0, 0, 0, .3);
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.carousel_indicator.current_slide {
+  background: rgba(0, 0, 0, .75)
+}
+
+.isHidden {
+  display: none;
+}
+
+#hero_1 {
+  position: relative;
+}
+
+#hero_1::after {
+  content: "";
+  background: url('../img/hero1.jpg');
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.8;
+}
+
+#read_publishing {
+  width: 120px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  background: black;
+  height: 40px;
+}
+
+@media only screen and (max-width: 900px) {
+  #hero {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 320px) {}

@@ -1,0 +1,147 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#primary_nav {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  padding: 20px 10px;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+#primary_nav a {
+  width: 300px;
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#primary_nav button {
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 34px;
+  width: 84px;
+  font-weight: bold;
+  font-size: .8rem;
+  color: grey;
+  background-color: white;
+}
+
+#navigator {
+  width: 100%;
+  height: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+#navigator ul {
+  display: flex;
+  margin: 10px auto;
+  padding: 18px 0;
+  width: fit-content;
+  max-width: 100%;
+  height: 30px;
+  list-style: none;
+  overflow-x: scroll;
+}
+
+#navigator ul::-webkit-scrollbar { 
+  display: none; 
+}
+
+#navigator li {
+  display: inline-block;
+  min-width: fit-content;
+  margin: 0 20px;
+}
+
+#navigator a {
+  color: grey;
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+#content {
+  width: 700px;
+}
+
+#trending {
+  padding-top: 60px;
+  width: 280px;
+}
+
+#trending h2 {
+  font-size: 1.5rem;
+  font-weight: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+#trending hr {
+  border: 0;
+  border-top: 1px solid lightgrey;
+  margin: 20px 0;
+}
+
+.trending_item {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+}
+
+.trending_item h3 {
+  color: lightgrey;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.trending_item span {
+  padding-left: 20px;
+}
+
+.trending_item p {
+  font-size: .9rem;
+  margin-top: 5px;
+}
+
+.trending_date {
+  color: grey;
+}
+
+@media only screen and (max-width: 1200px) {
+  main {
+    width: 100%;
+  }
+
+  #content {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #content {
+    width: 100%;
+  }
+
+  #trending {
+    display: none;
+  }
+}
