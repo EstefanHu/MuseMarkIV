@@ -38,6 +38,9 @@
       const currentDot = dotsNav.querySelector('.current_slide');
       const nextDot = currentDot.previousElementSibling;
       updateDots(currentDot, nextDot);
+
+      const nextIndex = slides.findIndex(slide => slide === prevSlide);
+      hideShowArrows(slides, prevButton, nextButton, nextIndex);
     })
 
     nextButton.addEventListener('click', () => {
@@ -48,6 +51,9 @@
       const currentDot = dotsNav.querySelector('.current_slide');
       const nextDot = currentDot.nextElementSibling;
       updateDots(currentDot, nextDot);
+
+      const nextIndex = slides.findIndex(slide => slide === nextSlide);
+      hideShowArrows(slides, prevButton, nextButton, nextIndex);
     });
 
     dotsNav.addEventListener('click', e => {
@@ -59,17 +65,7 @@
       const targetSlide = slides[targetIndex];
       moveToSlide(track, currSlide, targetSlide);
       updateDots(currentDot, targetDot);
-
-      if (targetIndex === 0) {
-        prevButton.classList.add('isHidden');
-        nextButton.classList.remove('isHidden');
-      } else if (targetIndex === slides.length - 1) {
-        prevButton.classList.remove('isHidden');
-        nextButton.classList.add('isHidden');
-      } else {
-        prevButton.classList.remove('isHidden');
-        nextButton.classList.remove('isHidden');
-      }
+      hideShowArrows(slides, prevButton, nextButton, targetIndex);
     });
   }
 
@@ -82,10 +78,20 @@
     track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
     currSlide.classList.remove('current_slide');
     targetSlide.classList.add('current_slide');
-    
   }
 
-  
+  const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
+    if (targetIndex === 0) {
+      prevButton.classList.add('isHidden');
+      nextButton.classList.remove('isHidden');
+    } else if (targetIndex === slides.length - 1) {
+      prevButton.classList.remove('isHidden');
+      nextButton.classList.add('isHidden');
+    } else {
+      prevButton.classList.remove('isHidden');
+      nextButton.classList.remove('isHidden');
+    }
+  }
 
   
 })();
