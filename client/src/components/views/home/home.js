@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './home.css';
+
 import Hero from './hero/hero';
 import Hosts from '../../wrappers/posts';
 import Content from '../../wrappers/content';
