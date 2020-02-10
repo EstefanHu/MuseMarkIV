@@ -10,6 +10,9 @@ const Home = () => {
     <>
       <Hero />
       <main>
+        <section>
+          
+        </section>
         <Trending />
       </main>
     </>
