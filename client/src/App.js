@@ -8,7 +8,7 @@ import './App.css';
 
 import Nav from './components/layout/nav/nav';
 import Navigator from './components/layout/navigator/navigator';
-import Home from './components/views/home';
+import Home from './components/views/home/home';
 import Genre from './components/views/genre';
 import Post from './components/views/post';
 import Join from './components/views/join';

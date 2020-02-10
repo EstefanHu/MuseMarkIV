@@ -35,12 +35,12 @@ const Navigator = () => {
   ];
 
   return (
-    <nav style={ nav }>
-      <span style={ navigator}>
-        {clubs.map(item => (
+    <nav style={ nav } id='navigator'>
+      <ul>{clubs.map(item => (
+        <li>
           <Item name={ item.name } key={ item.id }/>
-        ))}
-      </span>
+        </li>
+      ))}</ul>
     </nav>
   )
 }
@@ -53,15 +53,6 @@ const nav = {
   top: '0',
   backgroundColor: 'white',
   zIndex: '10'
-}
-
-const navigator = {
-  display: 'flex',
-  justifyContent: 'space-around',
-  margin: '10px auto',
-  padding: '18px 20px',
-  width: '70vw',
-  height: '30px',
 }
 
 export default Navigator;
