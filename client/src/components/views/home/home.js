@@ -10,8 +10,8 @@ const Home = () => {
     <>
       <Hero />
       <main>
-        <section>
-          
+        <section className='content'>
+
         </section>
         <Trending />
       </main>
