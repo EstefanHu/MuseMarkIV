@@ -18,7 +18,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .carousel_item h1 {
@@ -89,8 +89,9 @@
   display: none;
 }
 
-#hero_1, #hero_2 {
+#hero_1, #hero_2, #hero_3 {
   position: relative;
+  padding-bottom: 50px;
 }
 
 #hero_1::after {
@@ -106,7 +107,7 @@
   opacity: 0.4;
 }
 
-#read_publishing {
+#read_publishing, #join_beta {
   width: 120px;
   font-weight: bold;
   font-size: 1rem;
@@ -115,7 +116,7 @@
   border-radius: 5px;
   background: black;
   height: 40px;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 #hero_2::after {
@@ -129,6 +130,19 @@
   z-index: -1;
   position: absolute;
   opacity: 0.4;
+}
+
+#hero_3::after {
+  content: "";
+  background: url("../img/hero3.jpg");
+  background-size: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.4;;
 }
 
 @media only screen and (max-width: 900px) {
