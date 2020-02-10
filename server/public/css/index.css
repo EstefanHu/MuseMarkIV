@@ -89,7 +89,7 @@
   display: none;
 }
 
-#hero_1 {
+#hero_1, #hero_2 {
   position: relative;
 }
 
@@ -103,7 +103,7 @@
   right: 0;
   z-index: -1;
   position: absolute;
-  opacity: 0.8;
+  opacity: 0.4;
 }
 
 #read_publishing {
@@ -115,6 +115,20 @@
   border-radius: 5px;
   background: black;
   height: 40px;
+  margin: 10px auto;
+}
+
+#hero_2::after {
+  content: "";
+  background: url('../img/hero2.jpg');
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.4;
 }
 
 @media only screen and (max-width: 900px) {
