@@ -26,29 +26,36 @@ app.get('/', (req, res) => {
 
 app.get('/trending', (req, res) => {
     try {
-        const trending = [
-            {
-                "title": "Gen X Will Not go Quitly",
-                "author": "Amber Fraley",
-                "date": "Jan 23"
-            },
-            {
-                "title": "The Actual State of the Union",
-                "author": "Drew Magnorly",
-                "date": "Jan 28"
-            },
-            {
-                "title": "Teslas Cybertruck has a huge coboy probelm",
-                "author": "David H Freeman",
-                "date": "Feb 3"
-            },
-            {
-                "title": "Want to Feel loved? Get Cancer.",
-                "author": "Brandon Janouse",
-                "date": "Jan 12"
-            }
-        ]
+        const trending = {
+            "trending": [
+                {
+                    "id": 1,
+                    "title": "Gen X Will Not go Quitly",
+                    "author": "Amber Fraley",
+                    "date": "Jan 23"
+                },
+                {
+                    "id": 2,
+                    "title": "The Actual State of the Union",
+                    "author": "Drew Magnorly",
+                    "date": "Jan 28"
+                },
+                {
+                    "id": 3,
+                    "title": "Teslas Cybertruck has a huge coboy probelm",
+                    "author": "David H Freeman",
+                    "date": "Feb 3"
+                },
+                {
+                    "id": 4,
+                    "title": "Want to Feel loved? Get Cancer.",
+                    "author": "Brandon Janouse",
+                    "date": "Jan 12"
+                }
+            ]
+        }
         res.json(trending);
+        console.log('hello')
     } catch(error) {
         res.type('text').status(500).send('Error:' + error);
     }
