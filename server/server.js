@@ -71,11 +71,11 @@ app.get('/genre/:genre', (req, res) => {
     }
 });
 
-// const home = require('./routes/home');
-// const comment = require('./routes/comment');
+const home = require('./routes/home');
+const comment = require('./routes/comment');
 
-// app.use('/home', home);
-// app.use('/comment', comment);
+app.use('/home', home);
+app.use('/comment', comment);
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {

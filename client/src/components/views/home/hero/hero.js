@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Carousel from './carousel';
 import Nav from './nav';
 
 const Hero = () => {
+  useEffect(() => {
+    console.log('hello World');
+  }, []);
+
   return (
     <section id='hero'>
       <button className='carousel_button isHidden' id='carousel_button--left'>
@@ -17,5 +21,7 @@ const Hero = () => {
     </section>
   )
 }
+
+
 
 export default Hero;

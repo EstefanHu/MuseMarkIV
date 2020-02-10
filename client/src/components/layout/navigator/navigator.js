@@ -31,14 +31,18 @@ const Navigator = () => {
     {
       "id": 7,
       "name": "Graphic Novels"
+    },
+    {
+      "id": 8,
+      "name": "Illistrations"
     }
   ];
 
   return (
     <nav style={ nav } id='navigator'>
       <ul>{clubs.map(item => (
-        <li>
-          <Item name={ item.name } key={ item.id }/>
+        <li key={ item.id }>
+          <Item name={ item.name }/>
         </li>
       ))}</ul>
     </nav>
@@ -49,7 +53,7 @@ const nav = {
   width: '100%',
   height: '50px',
   position: '-webkit-sticky',
-  position: 'sticky',
+  // position: 'sticky',
   top: '0',
   backgroundColor: 'white',
   zIndex: '10'
