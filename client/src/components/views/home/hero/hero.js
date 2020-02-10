@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 
 import Carousel from './carousel';
-import Nav from './nav';
 
 const Hero = () => {
   useEffect(() => {
@@ -91,7 +90,11 @@ const Hero = () => {
       <button className='carousel_button' id='carousel_button--right'>
         <img src='../img/next.png' alt='' />  
       </button>
-      <Nav />
+      <div id='carousel_nav'>
+        <button className="carousel_indicator current_slide"></button>
+        <button className="carousel_indicator"></button>
+        <button className="carousel_indicator"></button>
+      </div>
     </section>
   )
 }
