@@ -4,7 +4,6 @@ import Carousel from './carousel';
 
 const Hero = () => {
   useEffect(() => {
-    console.log('hello World');
     const track = document.getElementById('carousel_track');
     const slides = Array.from(track.children);
     const nextButton = document.getElementById('carousel_button--right');

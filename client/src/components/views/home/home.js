@@ -3,16 +3,14 @@ import React from 'react';
 import './home.css';
 
 import Hero from './hero/hero';
-import Hosts from '../../wrappers/posts';
-import Content from '../../wrappers/content';
+import Trending from '../../layout/Trending/trending';
 
 const Home = () => {
   return (
     <>
       <Hero />
       <main>
-        <Content isBase={ true } />
-        <Hosts />
+        <Trending />
       </main>
     </>
   )
