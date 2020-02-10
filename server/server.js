@@ -62,6 +62,15 @@ app.post('/createComment/:post', (req, res) => {
     }
 });
 
+app.get('/genre/:genre', (req, res) => {
+    try {
+        const genre = req.params.genre;
+        res.json(genre);
+    } catch(error) {
+        res.type('text').status(500).send('Error:' + error);
+    }
+});
+
 // const home = require('./routes/home');
 // const comment = require('./routes/comment');
 
