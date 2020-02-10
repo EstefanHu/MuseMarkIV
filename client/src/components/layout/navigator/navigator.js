@@ -6,28 +6,33 @@ const Navigator = () => {
   const clubs = [
     {
       "id": 1,
-      "name": "Write Away!"
+      "name": "Home"
     },
     {
       "id": 2,
-      "name": "AU"
+      "name": "Poetry"
     },
     {
       "id": 3,
-      "name": "UW Poetry Club"
+      "name": "Fiction"
     },
     {
       "id": 4,
-      "name": "Bricolage"
+      "name": "NonFiction"
     },
     {
       "id": 5,
-      "name": "The Daily"
+      "name": "Speculative Fiction"
     },
     {
       "id": 6,
-      "name": "ASUWQSC"
-    }];
+      "name": "YA"
+    },
+    {
+      "id": 7,
+      "name": "Graphic Novels"
+    }
+  ];
 
   return (
     <nav style={ nav }>

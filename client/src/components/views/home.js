@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Hero from '../hero/hero';
+import Hero from '../layout/hero/hero';
 import Hosts from '../wrappers/posts';
 import Content from '../wrappers/content';
 

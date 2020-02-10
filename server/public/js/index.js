@@ -7,7 +7,12 @@
       .then(res => res.json())
       .then(res => renderTrending(res))
       .catch(console.error);
-
+    document.getElementById('read_publishing').addEventListener('click', e => {
+      console.log('hello from publishing');
+    });
+    document.getElementById('join_beta').addEventListener('click', e => {
+      window.location.href = "join.html";
+    });
     carousel();
   }
 

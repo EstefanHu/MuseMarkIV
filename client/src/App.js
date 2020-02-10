@@ -6,27 +6,35 @@ import {
 } from 'react-router-dom';
 import './App.css';
 
-import Nav from './components/nav/nav';
-import Navigator from './components/navigator/navigator';
+import Nav from './components/layout/nav/nav';
+import Navigator from './components/layout/navigator/navigator';
 import Home from './components/views/home';
-import Club from './components/views/club';
+import Genre from './components/views/genre';
 import Post from './components/views/post';
+import Join from './components/views/join';
+import ReadMore from './components/views/readmore';
 
 const App = () => {
-  const user = 'Estefan Hu';
   return (
     <Router>
-      <Nav user={ user }/>
+      <Nav/>
       <Navigator />
       <Switch>
         <Route path='/' exact>
           <Home />
         </Route>
-        <Route path='/club' exact>
-          <Club />
+        <Route path='/genre' exact>
+          <Genre />
         </Route>
         <Route path='/post' exact>
           <Post />
+        </Route>
+
+        <Route path='/join' exact>
+          <Join />
+        </Route>
+        <Route path='/readmore' exact>
+          <ReadMore />
         </Route>
       </Switch>
     </Router>

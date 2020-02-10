@@ -17,7 +17,7 @@ const navBar = {
   justifyContent: 'space-between',
   height: '60px',
   padding: '20px 10px',
-  width: '70vw',
+  width: '1200px',
   margin: '0 auto',
 }
 

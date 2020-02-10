@@ -3,7 +3,7 @@ import React from 'react';
 const Actions = props => {
   return (
     <button style={ join }>
-      Join Beta
+      Join Muse
     </button>
   )
 }
