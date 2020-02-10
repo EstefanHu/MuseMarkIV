@@ -1,5 +1,6 @@
 import React from 'react';
 
+import './navigator.css';
 import Item from './item';
 
 const Navigator = () => {
@@ -39,7 +40,7 @@ const Navigator = () => {
   ];
 
   return (
-    <nav style={ nav } id='navigator'>
+    <nav id='navigator'>
       <ul>{clubs.map(item => (
         <li key={ item.id }>
           <Item name={ item.name }/>
@@ -47,16 +48,6 @@ const Navigator = () => {
       ))}</ul>
     </nav>
   )
-}
-
-const nav = {
-  width: '100%',
-  height: '50px',
-  position: '-webkit-sticky',
-  // position: 'sticky',
-  top: '0',
-  backgroundColor: 'white',
-  zIndex: '10'
 }
 
 export default Navigator;

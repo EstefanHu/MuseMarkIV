@@ -5,7 +5,7 @@ import Actions from './actions';
 
 const Nav = props => {
   return (
-    <nav style={ navBar }>
+    <nav style={navBar}>
       <Logo />
       <Actions user={ props.user } />
     </nav>
