@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.isHidden {
+  display: none;
+}
+
 #navigator {
   width: 100%;
   height: 50px;
@@ -43,6 +47,149 @@
   text-decoration: none;
 }
 
+#hero {
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel_button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+#carousel_button--left {
+  left: -40px;
+}
+
+#carousel_button--right {
+  right: -40px;
+}
+
+.carousel_button img {
+  width: 20px;
+}
+
+#carousel_track-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#carousel_track {
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.carousel_item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.carousel_item h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.carousel_item p {
+  font-size: 1.5rem;
+}
+
+.carousel_slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#carousel_nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel_indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background: rgba(0, 0, 0, .3);
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.carousel_indicator.current_slide {
+  background: rgba(0, 0, 0, .75)
+}
+
+#hero_1, #hero_2, #hero_3 {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+#hero_1::after {
+  content: "";
+  background: url('./img/hero1.jpg');
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.4;
+}
+
+#read_publishing, #join_beta {
+  width: 120px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  background: black;
+  height: 40px;
+  margin: 20px auto;
+}
+
+#hero_2::after {
+  content: "";
+  background: url('./img/hero2.jpg');
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.4;
+}
+
+#hero_3::after {
+  content: "";
+  background: url("./img/hero3.jpg");
+  background-size: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.4;;
+}
+
 main {
   display: flex;
   justify-content: space-evenly;
@@ -50,3 +197,13 @@ main {
   margin: 0 auto;
   padding-top: 10px;
 }
+
+@media only screen and (max-width: 900px) {
+  #hero {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 320px) {}
