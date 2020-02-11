@@ -20,7 +20,9 @@ const Genre = () => {
     </main>
   ) : (
     <main>
-      <h1>Looks like ${genre} doesnt have any submissions</h1>
+      <h1>No content submitted for { genre }</h1>
+      <p>Be the first!</p>
+      <button id='submit'>Submit Work</button>
     </main>
   )
 }

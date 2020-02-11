@@ -20,10 +20,6 @@ mongoose.connection.once('open', () => {
     console.log('Connection Error: ' + err);
 });
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/views/index.html');
-});
-
 app.get('/trending', (req, res) => {
     try {
         const trending = {

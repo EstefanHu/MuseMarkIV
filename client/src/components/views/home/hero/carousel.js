@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Carousel = () => {
   return (
@@ -23,7 +24,9 @@ const Carousel = () => {
           <div className="carousel_item" id="hero_3">
             <h1>Beta Coming Soon</h1>
             <p>Keep up with the project</p>
-            <button id="join_beta">Join Beta</button>
+            <Link to='/join'>
+              <button id="join_beta">Join Beta</button>
+            </Link>
           </div>
         </li>
       </ul>
