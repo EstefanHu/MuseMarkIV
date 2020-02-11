@@ -1,17 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Item = props => {
-  return (
-    <a href='/' style={ item }>{ props.name }</a>
-  )
-}
+  const route = '/genre/' + props.name.replace(/\s/g, '');
 
-const item = {
-  color: 'grey',
-  textTransform: 'uppercase',
-  fontSize: '.85rem',
-  fontWeight: '500',
-  textDecoration: 'none',
+  return (
+    <Link to={ route }>{ props.name }</Link>
+  )
 }
 
 export default Item;

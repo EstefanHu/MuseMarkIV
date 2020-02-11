@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <Hero />
       <main>
-        <section className='content'>
+        <section id='content'>
 
         </section>
         <Trending />

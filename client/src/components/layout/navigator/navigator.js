@@ -1,14 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './navigator.css';
 import Item from './item';
 
 const Navigator = () => {
   const clubs = [
-    {
-      "id": 1,
-      "name": "Home"
-    },
     {
       "id": 2,
       "name": "Poetry"
@@ -41,7 +38,11 @@ const Navigator = () => {
 
   return (
     <nav id='navigator'>
-      <ul>{clubs.map(item => (
+      <ul>
+        <li>
+          <Link to='/'>Home</Link>
+        </li>
+        {clubs.map(item => (
         <li key={ item.id }>
           <Item name={ item.name }/>
         </li>

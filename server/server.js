@@ -55,7 +55,6 @@ app.get('/trending', (req, res) => {
             ]
         }
         res.json(trending);
-        console.log('hello')
     } catch(error) {
         res.type('text').status(500).send('Error:' + error);
     }
