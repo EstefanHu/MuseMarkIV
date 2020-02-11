@@ -1,23 +1,26 @@
 import React, { useState, useEffect } from 'react';
-
-import Trending from '../../layout/Trending/trending';
+import { useParams } from 'react-router-dom';
 
 const Genre = () => {
   const [post, setpost] = useState('');
+  const { genre } = useParams();
 
   useEffect(() => {
-    fetch('http://localhost:4000/genre')
+    fetch('http://localhost:4000/genre/' + genre)
       .then(res => res.json())
       .then(res => setpost(res.posts))
       .catch(console.error);
-  }, []);
+  }, [genre]);
 
-  return (
+  return post ? (
     <main>
       <section id='content'>
-      
+
       </section>
-      <Trending />
+    </main>
+  ) : (
+    <main>
+      Loading...
     </main>
   )
 }

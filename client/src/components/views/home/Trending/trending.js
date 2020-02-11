@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-import './trending.css';
 import Item from './item';
 
 const Trending = () => {

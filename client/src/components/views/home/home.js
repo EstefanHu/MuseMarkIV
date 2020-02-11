@@ -3,7 +3,7 @@ import React from 'react';
 import './home.css';
 
 import Hero from './hero/hero';
-import Trending from '../../layout/Trending/trending';
+import Trending from './Trending/trending';
 
 const Home = () => {
   return (

@@ -18,9 +18,9 @@ const App = () => {
   return (
     <Router>
       <Nav/>
-      <Navigator />
       <Switch>
         <Route path='/' exact>
+          <Navigator />
           <Home />
         </Route>
         <Route path='/genre/:genre' exact>
@@ -29,7 +29,6 @@ const App = () => {
         <Route path='/post' exact>
           <Post />
         </Route>
-
         <Route path='/join' exact>
           <Join />
         </Route>
