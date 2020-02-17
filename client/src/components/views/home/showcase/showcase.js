@@ -2,19 +2,19 @@ import React, { useState, useEffect } from 'react';
 
 import Item from './item';
 
-const Trending = () => {
+const Showcase = () => {
   const [post, setPost] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:4000/trending')
+    fetch('http://localhost:4000/showcase')
       .then(res => res.json())
-      .then(res => setPost(res.trending))
+      .then(res => setPost(res.showcase))
       .catch(console.error);
   }, []);
 
   return post ? (
-    <aside id='trending'>
-      <h2>Trending on Muse</h2>
+    <aside id='showcase'>
+      <h2>showcase on Muse</h2>
       <hr/>
       {post.map((item, index) => (
         <Item
@@ -27,10 +27,10 @@ const Trending = () => {
       ))}
     </aside>
   ) : (
-    <aside id='trending'>
+    <aside id='showcase'>
       Loading...
     </aside>
   )
 }
 
-export default Trending;
+export default Showcase;

@@ -14,14 +14,14 @@ const Join = () => {
       <div id='join_container'>
         <img src='../img/register.jpg' alt='' />
         <div id='register'>
-          <h1>Register for Muse</h1>
+          <h1>Join the Community</h1>
           <form action='#'>
             <input type='text' placeholder='First Name' />
             <input type='text' placeholder='Last Name' />
             <input type='email' placeholder='Email Address' />
             <input type='password' placeholder='Password' />
             <input type='password' placeholder='Confirm Password' />
-            <input type='submit' value='Join the Community' />
+            <input type='submit' value='Join!' />
           </form>
         </div>
       </div>

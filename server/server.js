@@ -20,26 +20,30 @@ mongoose.connection.once('open', () => {
     console.log('Connection Error: ' + err);
 });
 
+app.get('/', (req, res) => {
+    res.sendfile(__dirname + '/public/views/index.html');
+})
+
 app.get('/trending', (req, res) => {
     try {
         const trending = {
             "trending": [
                 {
                     "id": 1,
-                    "title": "Gen X Will Not go Quitly",
-                    "author": "Amber Fraley",
+                    "title": "Unexpected Stranger",
+                    "author": "Lidia H.",
                     "date": "Jan 23"
                 },
                 {
                     "id": 2,
-                    "title": "The Actual State of the Union",
-                    "author": "Drew Magnorly",
+                    "title": "Literacy is in the Eye of the Beholder",
+                    "author": "EDP",
                     "date": "Jan 28"
                 },
                 {
                     "id": 3,
-                    "title": "Teslas Cybertruck has a huge coboy probelm",
-                    "author": "David H Freeman",
+                    "title": "The Valley & The Brothers",
+                    "author": "Elsa Petrov",
                     "date": "Feb 3"
                 },
                 {
