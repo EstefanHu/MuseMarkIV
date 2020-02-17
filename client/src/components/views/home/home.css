@@ -140,3 +140,46 @@
   position: absolute;
   opacity: 0.4;;
 }
+
+#showcase {
+  padding-top: 60px;
+  width: 280px;
+}
+
+#showcase h2 {
+  font-size: 1.5rem;
+  font-weight: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+#showcase hr {
+  border: 0;
+  border-top: 1px solid lightgrey;
+  margin: 20px 0;
+}
+
+.showcase_item {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+}
+
+.showcase_item h3 {
+  color: lightgrey;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.showcase_item span {
+  padding-left: 20px;
+}
+
+.showcase_item p {
+  font-size: .9rem;
+  margin-top: 5px;
+}
+
+.showcase_date {
+  color: grey;
+}

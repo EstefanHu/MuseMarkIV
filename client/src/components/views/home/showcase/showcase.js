@@ -14,7 +14,7 @@ const Showcase = () => {
 
   return post ? (
     <aside id='showcase'>
-      <h2>showcase on Muse</h2>
+      <h2>Muse Showcase</h2>
       <hr/>
       {post.map((item, index) => (
         <Item

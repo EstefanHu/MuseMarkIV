@@ -20,14 +20,10 @@ mongoose.connection.once('open', () => {
     console.log('Connection Error: ' + err);
 });
 
-app.get('/', (req, res) => {
-    res.sendfile(__dirname + '/public/views/index.html');
-})
-
-app.get('/trending', (req, res) => {
+app.get('/showcase', (req, res) => {
     try {
-        const trending = {
-            "trending": [
+        const showcase = {
+            "showcase": [
                 {
                     "id": 1,
                     "title": "Unexpected Stranger",
@@ -54,11 +50,11 @@ app.get('/trending', (req, res) => {
                 }
             ]
         }
-        res.json(trending);
+        res.json(showcase);
     } catch(error) {
         res.type('text').status(500).send('Error:' + error);
     }
-})
+});
 
 app.post('/createComment/:post', (req, res) => {
     try {
