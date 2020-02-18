@@ -144,6 +144,9 @@
 #showcase {
   padding-top: 60px;
   width: 280px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 #showcase h2 {

@@ -5,7 +5,7 @@ import './navigator.css';
 import Item from './item';
 
 const Navigator = () => {
-  const clubs = [
+  const genre = [
     {
       "id": 2,
       "name": "Poetry"
@@ -42,7 +42,7 @@ const Navigator = () => {
         <li>
           <Link to='/'>Home</Link>
         </li>
-        {clubs.map(item => (
+        {genre.map(item => (
         <li key={ item.id }>
           <Item name={ item.name }/>
         </li>

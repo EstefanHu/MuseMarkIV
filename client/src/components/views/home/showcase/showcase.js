@@ -1,16 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import Item from './item';
 
-const Showcase = () => {
-  const [post, setPost] = useState('');
-
-  useEffect(() => {
-    fetch('http://localhost:4000/showcase')
-      .then(res => res.json())
-      .then(res => setPost(res.showcase))
-      .catch(console.error);
-  }, []);
+const Showcase = props => {
+  const post = props.item;
 
   return post ? (
     <aside id='showcase'>

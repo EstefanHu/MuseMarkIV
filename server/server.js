@@ -20,9 +20,9 @@ mongoose.connection.once('open', () => {
     console.log('Connection Error: ' + err);
 });
 
-app.get('/showcase', (req, res) => {
+app.get('/home', (req, res) => {
     try {
-        const showcase = {
+        const home = {
             "showcase": [
                 {
                     "id": 1,
@@ -48,13 +48,137 @@ app.get('/showcase', (req, res) => {
                     "author": "Brandon Janouse",
                     "date": "Jan 12"
                 }
+            ],
+            "posts": [
+                {
+                    "id": 1,
+                    "genre": "Short Story",
+                    "title": "Unexpected Stranger",
+                    "author": "Lidia H.",
+                    "date": "Jan 23",
+                    "pitch": "When a Stranger person enters a strange new place",
+                    "credibility": 89634,
+                    "length": "5 min"
+                },
+                {
+                    "id": 2,
+                    "genre": "Poem",
+                    "title": "Literacy is in the Eye of the Beholder",
+                    "author": "EDP",
+                    "date": "Jan 28",
+                    "pitch": "When a Stranger person enters a strange new place",
+                    "credibility": 894311,
+                    "length": "5 min"
+                },
+                {
+                    "id": 3,
+                    "genre": "Poem",
+                    "title": "The Valley & The Brothers",
+                    "author": "Elsa Petrov",
+                    "date": "Feb 3",
+                    "pitch": "When a Stranger person enters a strange new place",
+                    "credibility": 1934817,
+                    "length": "5 min"
+                },
+                {
+                    "id": 4,
+                    "genre": "Short Story",
+                    "title": "Unexpected Stranger",
+                    "author": "Lidia H.",
+                    "date": "Jan 23",
+                    "pitch": "When a Stranger person enters a strange new place",
+                    "credibility": 89634,
+                    "length": "5 min"
+                },
+                {
+                    "id": 5,
+                    "genre": "Poem",
+                    "title": "Literacy is in the Eye of the Beholder",
+                    "author": "EDP",
+                    "date": "Jan 28",
+                    "pitch": "When a Stranger person enters a strange new place",
+                    "credibility": 894311,
+                    "length": "5 min"
+                },
+                {
+                    "id": 6,
+                    "genre": "Poem",
+                    "title": "The Valley & The Brothers",
+                    "author": "Elsa Petrov",
+                    "date": "Feb 3",
+                    "pitch": "When a Stranger person enters a strange new place",
+                    "credibility": 1934817,
+                    "length": "5 min"
+                },
+                {
+                    "id": 7,
+                    "genre": "Short Story",
+                    "title": "Unexpected Stranger",
+                    "author": "Lidia H.",
+                    "date": "Jan 23",
+                    "pitch": "When a Stranger person enters a strange new place",
+                    "credibility": 89634,
+                    "length": "5 min"
+                },
+                {
+                    "id": 8,
+                    "genre": "Poem",
+                    "title": "Literacy is in the Eye of the Beholder",
+                    "author": "EDP",
+                    "date": "Jan 28",
+                    "pitch": "When a Stranger person enters a strange new place",
+                    "credibility": 894311,
+                    "length": "5 min"
+                },
+                {
+                    "id": 9,
+                    "genre": "Poem",
+                    "title": "The Valley & The Brothers",
+                    "author": "Elsa Petrov",
+                    "date": "Feb 3",
+                    "pitch": "When a Stranger person enters a strange new place",
+                    "credibility": 1934817,
+                    "length": "5 min"
+                },
+                {
+                    "id": 10,
+                    "genre": "Short Story",
+                    "title": "Unexpected Stranger",
+                    "author": "Lidia H.",
+                    "date": "Jan 23",
+                    "pitch": "When a Stranger person enters a strange new place",
+                    "credibility": 89634,
+                    "length": "5 min"
+                },
+                {
+                    "id": 11,
+                    "genre": "Poem",
+                    "title": "Literacy is in the Eye of the Beholder",
+                    "author": "EDP",
+                    "date": "Jan 28",
+                    "pitch": "When a Stranger person enters a strange new place",
+                    "credibility": 894311,
+                    "length": "5 min"
+                },
+                {
+                    "id": 12,
+                    "genre": "Poem",
+                    "title": "The Valley & The Brothers",
+                    "author": "Elsa Petrov",
+                    "date": "Feb 3",
+                    "pitch": "When a Stranger person enters a strange new place",
+                    "credibility": 1934817,
+                    "length": "5 min"
+                }
             ]
         }
-        res.json(showcase);
+        res.json(home);
     } catch(error) {
         res.type('text').status(500).send('Error:' + error);
     }
 });
+
+
 
 app.post('/createComment/:post', (req, res) => {
     try {

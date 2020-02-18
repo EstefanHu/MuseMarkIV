@@ -1,0 +1,53 @@
+#content {
+    width: 600px;
+    height: fit-content;
+    margin: 60px 50px;
+}
+
+#content article {
+    width: 100%;
+    margin-bottom: 40px; 
+}
+
+#content article > span {
+    display: flex;
+    flex-direction: column;
+}
+
+.post__header {
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+    margin-bottom: 3px;
+    padding-right: 100px;
+}
+
+#content a {
+    color: grey;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#content a:hover,
+#content a:focus {
+    text-decoration: underline;
+}
+
+#content h1 {
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content h1:hover,
+#content h1:focus {
+    cursor: pointer;
+}
+
+.post__pitch {
+    margin: 10px 0 5px 0;
+}
+
+.post__footer {
+    font-size: .8rem;
+    color: grey;
+}
