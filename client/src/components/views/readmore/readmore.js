@@ -1,8 +1,16 @@
 import React from 'react';
 
+import './readmore.css';
+
 const ReadMore = () => {
   return (
-    <h1>ReadMore</h1>
+    <main id='readmore__container'>
+      <section id='readmore__background'>
+        <div>
+          
+        </div>
+      </section>
+    </main>
   )
 }
 
