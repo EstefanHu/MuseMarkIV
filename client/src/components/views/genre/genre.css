@@ -1,0 +1,44 @@
+#genre__hero {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#genre__hero h1 {
+    font-size: 5rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#genre__hero button {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 0;
+    background: black;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 100px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    main {
+      width: 100vw;
+    }
+  
+    #genre__hero {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {}
+  
+  @media only screen and (max-width: 600px) {}
+  @media only screen and (max-width: 480px) {}
+  @media only screen and (max-width: 320px) {}
