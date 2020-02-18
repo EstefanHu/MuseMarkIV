@@ -1,9 +1,27 @@
+#author__breakdown {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+#author__breakdown--image {
+  border: 1px solid grey;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  background-image: url('./author/user.png');
+  background-position: center;
+  background-size: cover;
+  margin: 10px auto;
+}
+
+#author__breakdown h1 {
+  color: black;
+  text-align: center;
+}
+
 #post__content {
   display: flex;
   margin: 55px auto;
   width: 1200px;
-}
-
-#author__breakdown {
-  width: 
 }

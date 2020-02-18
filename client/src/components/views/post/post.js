@@ -19,9 +19,9 @@ const Post = () => {
         setAuthor(res.author);
       })
       .catch(console.error);
-  }, []);
+  }, [id]);
 
-  return author ? (
+  return (
     <main id='post__content'>
       <Author
         name={ author.firstName + ' ' + author.lastName }
@@ -31,10 +31,6 @@ const Post = () => {
       <Content
         title={ post.title }
       />
-    </main>
-  ) : (
-    <main>
-      Loading...
     </main>
   )
 }
