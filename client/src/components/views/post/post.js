@@ -3,27 +3,39 @@ import { useParams } from 'react-router-dom';
 
 import './post.css';
 
-import Nav from '../../layout/nav/nav';
+import Author from './author/author';
+import Content from './content/content';
 
 const Post = () => {
-  const { post, setPost } = useState('');
+  const [ post, setPost ] = useState('');
+  const [ author, setAuthor ] = useState('');
   const { id } = useParams();
 
   useEffect(() => {
     fetch('http://localhost:4000/post/' + id)
       .then(res => res.json())
-      .then(res => setPost(res.post))
+      .then(res => {
+        setPost(res.post);
+        setAuthor(res.author);
+      })
       .catch(console.error);
   }, []);
 
-  return post ? (
-    <>
-      <h1>Hello Post</h1>
-    </>
+  return author ? (
+    <main id='post__content'>
+      <Author
+        name={ author.firstName + ' ' + author.lastName }
+        email={ author.email }
+        credibility={ author.credibility }
+      />
+      <Content
+        title={ post.title }
+      />
+    </main>
   ) : (
-    <>
+    <main>
       Loading...
-    </>
+    </main>
   )
 }
 

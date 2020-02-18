@@ -182,7 +182,31 @@ app.get('/post/:id', (req, res) => {
     try {
         const id = req.params.id;
         console.log(id);
-        res.json('yaaaas');
+        res.json({
+            "author": {
+                "firstName": "Estefan",
+                "lastName": "Hu",
+                "email": "estefanhu074@gmail.com",
+                "credibility": 9487542
+            },
+            "post": {
+                "title": "Where We Come from",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut aliquam libero, at volutpat sapien. Aenean nec feugiat elit. Curabitur finibus pulvinar mattis. Maecenas ut dolor accumsan, mattis arcu eget, aliquam nisl. Nunc vel gravida sapien. Vivamus sit amet elit sit amet quam suscipit pulvinar sed in lectus. Vestibulum a dolor sed justo accumsan dapibus. Phasellus ac urna tempus, facilisis neque sit amet, fermentum lacus.Praesent ut felis laoreet, finibus urna et, hendrerit tellus. Cras ut sagittis justo. Proin convallis a nisi ac molestie. Morbi nibh leo, aliquet sit amet semper quis, euismod id magna. Proin auctor enim in urna pellentesque porta. Sed eu velit a orci porta condimentum ultrices rutrum est. Vestibulum fringilla ut velit vel rutrum. Vivamus a nisi nunc. Suspendisse arcu risus, gravida vel mi id, euismod scelerisque neque. Aenean sit amet volutpat ante. Maecenas ornare ante non ex rutrum egestas. Donec bibendum odio a nibh aliquet, id lacinia nibh convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et tortor hendrerit, tempor lacus ut, pellentesque massa. Curabitur dignissim eget turpis in tempusNulla facilisi. Quisque consequat, odio non ultricies pharetra, urna nibh consectetur augue, at hendrerit est tellus sit amet mauris. Vivamus bibendum est leo, vitae sollicitudin ipsum ultrices vel. Morbi ac commodo velit, vel congue mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed condimentum eros, non rhoncus purus. Ut nisi sem, laoreet at dignissim in, lobortis lacinia ligula. Quisque faucibus neque non urna bibendum luctus. Proin rutrum mollis dui, a ornare arcu molestie quis. Aenean malesuada sapien ante, congue tristique ex tempus at. Praesent ut auctor nunc, quis dapibus mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam pharetra eu nulla a convallis. Donec non arcu eu velit eleifend suscipit id sit amet quam. In porttitor, risus quis vehicula ornare, lorem turpis blandit ipsum, et volutpat arcu leo et urna. Integer in urna non odio sagittis aliquam ac quis augue.Pellentesque sed placerat urna. Sed ante turpis, lobortis quis luctus vitae, pharetra at tortor. Integer in velit a diam scelerisque finibus. In non ipsum sollicitudin, venenatis augue gravida, fermentum enim. Sed lobortis velit id condimentum semper. Ut sed ipsum non velit ullamcorper imperdiet. Maecenas egestas dolor non purus aliquam volutpat. Nunc eget purus quis odio fermentum tincidunt mollis vel metus. Mauris gravida egestas molestie. Cras massa metus, porttitor eget interdum id, sodales sed turpis. Ut aliquam at nisl eu dignissim. In mollis bibendum enim vel bibendum. Nam pulvinar magna at eros bibendum, non aliquet ligula luctus. Donec et mollis enim. Morbi ut sollicitudin lectus, a laoreet magna. Maecenas iaculis sem nulla, quis efficitur dolor posuere dictum. Integer ultricies vehicula magna eu ultricies. Nulla ac aliquam purus, non lobortis velit. Nunc cursus non ligula quis sagittis. Vivamus vestibulum elementum aliquam. Aliquam urna ex, pellentesque in maximus sed, eleifend quis metus. Duis at eleifend eros, vel convallis ligula. Nam vel ex id sem tempus porttitor. Mauris volutpat cursus turpis nec commodo. Nunc eget pharetra turpis, euismod imperdiet nibh. Duis ullamcorper lacus a mi pharetra, at elementum mauris laoreet. Sed egestas malesuada purus, at efficitur sem tincidunt sit amet. Donec elementum leo ac nisl pretium, nec finibus ex consectetur.",
+                "credibility": 94862,
+                "genre": "Fiction",
+                "date": "Jan 7",
+                "comments": [
+                    {
+                        "comment": "Wow such a great piece thank you for making it",
+                        "creator": "Steven W."
+                    },
+                    {
+                        "comment": "Awfull. No thanks",
+                        "creator": "Jessica O."
+                    }
+                ]
+            }
+        });
     } catch(error) {
         res.type('text').status(500).send('Error:' + error);
     }
