@@ -17,7 +17,9 @@ const Carousel = () => {
             <h1>Join Our Community</h1>
             <h1>Tell Your Story</h1>
             <h1>Gain an Audience</h1>
-            <button id="read_publishing">Read More</button>
+            <Link to='/readmore'>
+              <button id="read_publishing">Read More</button>
+            </Link>
           </div>
         </li>
         <li className="carousel_slide current_slide">

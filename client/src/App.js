@@ -14,7 +14,7 @@ import Genre from './components/views/genre/genre';
 import Post from './components/views/post/post';
 import Author from './components/views/author/author'
 import Join from './components/views/join/join';
-import ReadMore from './components/views/readmore';
+import ReadMore from './components/views/readmore/readmore';
 import Submit from './components/views/submit/submit';
 
 const App = () => {
