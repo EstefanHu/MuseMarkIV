@@ -10,6 +10,7 @@ import './App.css';
 import Home from './components/views/home/home';
 import Genre from './components/views/genre/genre';
 import Post from './components/views/post';
+import Author from './components/views/author/author'
 import Join from './components/views/join/join';
 import ReadMore from './components/views/readmore';
 
@@ -25,6 +26,9 @@ const App = () => {
         </Route>
         <Route path='/post' exact>
           <Post />
+        </Route>
+        <Route path='/author' exact>
+          <Author />
         </Route>
         <Route path='/join' exact>
           <Join />

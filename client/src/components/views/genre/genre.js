@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
+import Nav from '../../layout/homenav/homenav';
+
 const Genre = () => {
   const [post, setpost] = useState('');
   const { genre } = useParams();
@@ -12,18 +14,13 @@ const Genre = () => {
       .catch(console.error);
   }, [genre]);
 
-  return post ? (
-    <main>
-      <section id='content'>
+  return (
+    <>
+      <Nav />
+      <main>
 
-      </section>
-    </main>
-  ) : (
-    <main>
-      <h1>No content submitted for { genre }</h1>
-      <p>Be the first!</p>
-      <button id='submit'>Submit Work</button>
-    </main>
+      </main>
+    </>
   )
 }
 
