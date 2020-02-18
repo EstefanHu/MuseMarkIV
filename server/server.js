@@ -197,10 +197,12 @@ app.get('/post/:id', (req, res) => {
                 "date": "Jan 7",
                 "comments": [
                     {
+                        "id": 1,
                         "comment": "Wow such a great piece thank you for making it",
                         "creator": "Steven W."
                     },
                     {
+                        "id": 2,
                         "comment": "Awfull. No thanks",
                         "creator": "Jessica O."
                     }
