@@ -25,7 +25,7 @@ const App = () => {
         <Route path='/genre/:genre' exact>
           <Genre />
         </Route>
-        <Route path='/post' exact>
+        <Route path='/post/:id' exact>
           <Post />
         </Route>
         <Route path='/author' exact>

@@ -12,6 +12,7 @@ const Content = props => {
             {content.map(item => (
                 <Item
                     key={ item.id }
+                    id={ item.id }
                     genre={ item.genre }
                     title={ item.title }
                     author={ item.author }
