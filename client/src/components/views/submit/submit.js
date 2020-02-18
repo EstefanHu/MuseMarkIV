@@ -1,14 +1,13 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import Nav from '../../layout/homenav/homenav';
+import Nav from '../../layout/nav/nav';
 
 const Submit = () => {
     const { genre } = useParams();
 
     return (
         <>
-            <Nav />
             <main>
                 
             </main>

@@ -2,7 +2,7 @@ import React, {useState, useEffect } from 'react';
 
 import './home.css';
 
-import Nav from '../../layout/homenav/homenav';
+import Nav from '../../layout/nav/nav';
 import Navigator from '../../layout/navigator/navigator';
 import Content from '../../layout/content/content';
 import Hero from './hero/hero';
@@ -24,7 +24,6 @@ const Home = () => {
 
   return (
     <>
-      <Nav />
       <Navigator />
       <Hero />
       <main>

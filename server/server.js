@@ -178,7 +178,15 @@ app.get('/home', (req, res) => {
     }
 });
 
-
+app.get('/post/:id', (req, res) => {
+    try {
+        const id = req.params.id;
+        console.log(id);
+        res.json('yaaaas');
+    } catch(error) {
+        res.type('text').status(500).send('Error:' + error);
+    }
+});
 
 app.post('/createComment/:post', (req, res) => {
     try {

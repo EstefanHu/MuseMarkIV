@@ -7,9 +7,11 @@ import {
 
 import './App.css';
 
+import Nav from './components/layout/nav/nav';
+
 import Home from './components/views/home/home';
 import Genre from './components/views/genre/genre';
-import Post from './components/views/post';
+import Post from './components/views/post/post';
 import Author from './components/views/author/author'
 import Join from './components/views/join/join';
 import ReadMore from './components/views/readmore';
@@ -18,6 +20,7 @@ import Submit from './components/views/submit/submit';
 const App = () => {
   return (
     <Router>
+      <Nav />
       <Switch>
         <Route path='/' exact>
           <Home />

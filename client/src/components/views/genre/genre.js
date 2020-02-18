@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 import './genre.css';
 
-import Nav from '../../layout/homenav/homenav';
+import Nav from '../../layout/nav/nav';
 import Hero from './hero';
 
 const Genre = () => {
@@ -19,7 +19,6 @@ const Genre = () => {
 
   return (
     <>
-      <Nav />
       <Hero title={ genre }/>
       <main>
 
