@@ -31,7 +31,7 @@ const App = () => {
         <Route path='/post/:id' exact>
           <Post />
         </Route>
-        <Route path='/author' exact>
+        <Route path='/author/:id' exact>
           <Author />
         </Route>
         <Route path='/join' exact>

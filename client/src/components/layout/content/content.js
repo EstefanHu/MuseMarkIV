@@ -15,6 +15,7 @@ const Content = props => {
                     id={ item.id }
                     genre={ item.genre }
                     title={ item.title }
+                    authorId={ item.authorId }
                     author={ item.author }
                     date={ item.date }
                     pitch={ item.pitch }

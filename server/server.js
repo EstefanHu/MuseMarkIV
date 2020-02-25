@@ -54,6 +54,7 @@ app.get('/home', (req, res) => {
                     "id": 1,
                     "genre": "Short Story",
                     "title": "Unexpected Stranger",
+                    "authorId": 1,
                     "author": "Lidia H.",
                     "date": "Jan 23",
                     "pitch": "When a Stranger person enters a strange new place",
@@ -64,6 +65,7 @@ app.get('/home', (req, res) => {
                     "id": 2,
                     "genre": "Poem",
                     "title": "Literacy is in the Eye of the Beholder",
+                    "authorId": 2,
                     "author": "EDP",
                     "date": "Jan 28",
                     "pitch": "When a Stranger person enters a strange new place",
@@ -74,6 +76,7 @@ app.get('/home', (req, res) => {
                     "id": 3,
                     "genre": "Poem",
                     "title": "The Valley & The Brothers",
+                    "authorId": 3,
                     "author": "Elsa Petrov",
                     "date": "Feb 3",
                     "pitch": "When a Stranger person enters a strange new place",
@@ -84,6 +87,7 @@ app.get('/home', (req, res) => {
                     "id": 4,
                     "genre": "Short Story",
                     "title": "Unexpected Stranger",
+                    "authorId": 1,
                     "author": "Lidia H.",
                     "date": "Jan 23",
                     "pitch": "When a Stranger person enters a strange new place",
@@ -94,6 +98,7 @@ app.get('/home', (req, res) => {
                     "id": 5,
                     "genre": "Poem",
                     "title": "Literacy is in the Eye of the Beholder",
+                    "authorId": 1,
                     "author": "EDP",
                     "date": "Jan 28",
                     "pitch": "When a Stranger person enters a strange new place",
@@ -104,6 +109,7 @@ app.get('/home', (req, res) => {
                     "id": 6,
                     "genre": "Poem",
                     "title": "The Valley & The Brothers",
+                    "authorId": 1,
                     "author": "Elsa Petrov",
                     "date": "Feb 3",
                     "pitch": "When a Stranger person enters a strange new place",
@@ -114,6 +120,7 @@ app.get('/home', (req, res) => {
                     "id": 7,
                     "genre": "Short Story",
                     "title": "Unexpected Stranger",
+                    "authorId": 1,
                     "author": "Lidia H.",
                     "date": "Jan 23",
                     "pitch": "When a Stranger person enters a strange new place",
@@ -124,6 +131,7 @@ app.get('/home', (req, res) => {
                     "id": 8,
                     "genre": "Poem",
                     "title": "Literacy is in the Eye of the Beholder",
+                    "authorId": 1,
                     "author": "EDP",
                     "date": "Jan 28",
                     "pitch": "When a Stranger person enters a strange new place",
@@ -134,6 +142,7 @@ app.get('/home', (req, res) => {
                     "id": 9,
                     "genre": "Poem",
                     "title": "The Valley & The Brothers",
+                    "authorId": 1,
                     "author": "Elsa Petrov",
                     "date": "Feb 3",
                     "pitch": "When a Stranger person enters a strange new place",
@@ -144,6 +153,7 @@ app.get('/home', (req, res) => {
                     "id": 10,
                     "genre": "Short Story",
                     "title": "Unexpected Stranger",
+                    "authorId": 1,
                     "author": "Lidia H.",
                     "date": "Jan 23",
                     "pitch": "When a Stranger person enters a strange new place",
@@ -154,6 +164,7 @@ app.get('/home', (req, res) => {
                     "id": 11,
                     "genre": "Poem",
                     "title": "Literacy is in the Eye of the Beholder",
+                    "authorId": 1,
                     "author": "EDP",
                     "date": "Jan 28",
                     "pitch": "When a Stranger person enters a strange new place",
@@ -164,6 +175,7 @@ app.get('/home', (req, res) => {
                     "id": 12,
                     "genre": "Poem",
                     "title": "The Valley & The Brothers",
+                    "authorId": 1,
                     "author": "Elsa Petrov",
                     "date": "Feb 3",
                     "pitch": "When a Stranger person enters a strange new place",
@@ -184,6 +196,7 @@ app.get('/post/:id', (req, res) => {
         console.log(id);
         res.json({
             "author": {
+                "authorId": 1,
                 "firstName": "Estefan",
                 "lastName": "Hu",
                 "email": "estefanhu074@gmail.com",
@@ -229,6 +242,21 @@ app.get('/genre/:genre', (req, res) => {
         res.json({
             "posts": "hello"
         })
+    } catch(error) {
+        res.type('text').status(500).send('Error:' + error);
+    }
+});
+
+app.get('/author/:id', (req, res) => {
+    try {
+        res.json({
+            "author": {
+                "firstName": "Estefan",
+                "lastName": "Hu",
+                "email": "estefanhu074@gmail.com",
+                "credibility": 98234
+            }
+        });
     } catch(error) {
         res.type('text').status(500).send('Error:' + error);
     }
